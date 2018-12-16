@@ -6,5 +6,6 @@ WORKDIR /usr/src/poco-1.7.8p3-all
 RUN ./configure --no-tests --no-wstring --omit=Data/SQLite,Data/MySQL,Data/ODBC,Zip,MongoDB,PageCompiler,PageCompiler/File2Page
 RUN make
 RUN make install
-RUN rm -rf /usr/src/poco-1.7.8p3-all.tar.gz
+RUN ldconfig
+RUN rm -rf /usr/src/poco-1.7.8p3-all*
 
