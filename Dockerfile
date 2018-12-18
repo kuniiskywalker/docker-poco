@@ -7,6 +7,6 @@ RUN ./configure --no-tests --no-wstring --omit=Data/SQLite,Data/MySQL,Data/ODBC,
 RUN make
 RUN make install
 RUN ldconfig
-RUN rm -rf /usr/src/poco-1.7.8p3-all
 
 WORKDIR /usr/src
+RUN rm -rf /usr/src/poco-1.7.8p3-all
